@@ -17,9 +17,12 @@ Para cada linha da tabela de produtos:
 Preenche os campos de código, marca, tipo, categoria, preço unitário, custo e observações (se houver).
 Clica no botão "Enviar" para cadastrar o produto.
 Rola a tela para o início para preparar o próximo cadastro.
+
 Requisitos:
+
 Bibliotecas: pyautogui, pandas, time.
 Arquivo CSV: Certifique-se de que o arquivo produtos.csv está no diretório correto e contém os dados necessários.
+
 Observações:
 
 As coordenadas de clique (pyautogui.click) e outros comandos dependem da resolução da tela e da posição dos elementos no sistema. Ajuste conforme necessário.
