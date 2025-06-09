@@ -17,7 +17,7 @@ time.sleep(1)
 # Passo 02- Fazer o login no site com usuario e senha   1
 
 pyautogui.click(608, 465)
-pyautogui.write("cabrallnegociosonline@gmail.com")
+pyautogui.write("usuario.teste.automacao@gmail.com")
 
 pyautogui.press("tab")
 pyautogui.write("pastadedente")
@@ -38,6 +38,7 @@ print(tabela)
 for linha in tabela.index:
 
     pyautogui.click(604, 313)
+    time.sleep(0.5)
     codigo = str(tabela.loc[linha, "codigo"])
     pyautogui.write(codigo)
     pyautogui.press("tab")
@@ -50,7 +51,8 @@ for linha in tabela.index:
     pyautogui.write(tipo)
     pyautogui.press("tab")
 
-    categoria = str(int(tabela.loc[linha, "categoria"]))
+    categoria = tabela.loc[linha, "categoria"]
+    categoria = str(int(float(categoria)))
     pyautogui.write(categoria)
     pyautogui.press("tab")
 
