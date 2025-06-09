@@ -2,7 +2,7 @@ import pyautogui
 
 import time
 
-pyautogui.PAUSE = 1
+pyautogui.PAUSE = 0.5
 
 # Passo 01 -Entrar no sistema da empresa
    
