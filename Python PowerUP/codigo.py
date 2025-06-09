@@ -2,7 +2,7 @@ import pyautogui
 
 import time
 
-pyautogui.PAUSE = 0.5
+pyautogui.PAUSE = 0.7
 
 # Passo 01 -Entrar no sistema da empresa
    
@@ -54,6 +54,7 @@ for linha in tabela.index:
     categoria = tabela.loc[linha, "categoria"]
     categoria = str(int(float(categoria)))
     pyautogui.write(categoria)
+    pyautogui.press("space") 
     pyautogui.press("tab")
 
     preco_unitario = str(tabela.loc[linha, "preco_unitario"])
