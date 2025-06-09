@@ -19,13 +19,14 @@ time.sleep(1)
 pyautogui.click(608, 465)
 pyautogui.write("usuario.teste.automacao@gmail.com")
 
-pyautogui.press("tab")
+pyautogui.press("tab")     
+
 pyautogui.write("pastadedente")
 
 pyautogui.press("tab")
 pyautogui.press("enter")
 
-time.sleep(3)
+time.sleep(4)
 
 # Passo 03 - Importar a base de dados
 
@@ -54,7 +55,6 @@ for linha in tabela.index:
     categoria = tabela.loc[linha, "categoria"]
     categoria = str(int(float(categoria)))
     pyautogui.write(categoria)
-    pyautogui.press("space") 
     pyautogui.press("tab")
 
     preco_unitario = str(tabela.loc[linha, "preco_unitario"])
