@@ -1,6 +1,9 @@
 import pyautogui
 
 import time
+import pyperclip
+
+
 
 pyautogui.PAUSE = 0.7
 
@@ -28,7 +31,7 @@ pyautogui.press("enter")
 
 time.sleep(4)
 
-# Passo 03 - Importar a base de dados
+# PMOLO000192   Logitech    asso 03 - Importar a base de dados
 
 import pandas
 
